@@ -1,0 +1,91 @@
+
+@media screen and (max-width:768px){
+    @font-face {
+        font-family: 'Shrikhand';
+        src: url("../font/Shrikhand-Regular.ttf") format("ttf");
+    }
+    @font-face {
+        font-family: 'Roboto';
+        src: url("../font/Roboto-Black.ttf") format("ttf"),
+             url("../font/Roboto-Bold.ttf") format("ttf"),
+             url("../font/Roboto-Regular.ttf") format("ttf");
+    }
+
+    #heading{
+        max-width: 100%;
+        height: auto;
+        padding-bottom: 12px;
+        border-bottom: grey 1px solid;
+        text-align: center;
+        margin-top: 30px;
+            &_logo{
+                width: 40%;
+               
+            }
+        
+    }
+    #location{
+        height: 82px;
+        background-color: darkgrey;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+            &_icon{
+                font-size: 20px;
+                color: rgb(53, 52, 52);
+                margin-right: 20px;
+            }
+            &_text{
+                font-size: 26px;
+                font-weight: bold;
+                color:rgb(53, 52, 52);
+              
+            }
+
+    }
+    #info{
+        height: 300px;
+        background-color:lightgrey;
+        padding-top: 1px;
+        text-align: center;
+        padding-bottom: 70px;
+       
+            &_title{
+                font-family: Shrikhand;
+                font-weight: bolder;
+                font-size: 40px;
+                margin: 30px;
+            }
+            &_text{
+                font-size: 22px;
+                margin: 30px;
+                font-family: Roboto;
+            }
+            &_btn{
+                width:50%;
+                height: 70px;
+                border-radius: 30px;
+                background-color:#FF79DA ;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 5px;
+                margin: auto;
+                margin-top: 60px;
+                        
+                    &--text{
+                        color: white;
+                        font-size: 26px;
+                    }   
+            
+            }
+    }
+    nav{
+        background-color: aqua;
+        color: blue;
+    }
+
+   
+   
+  }  
+  
