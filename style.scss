@@ -1,20 +1,27 @@
-
+$primaryColor:#9356DC;
+$secondColor:#FF79DA;
+$squareColor:#99E2D0;
 @media screen and (max-width:768px){
-    @font-face {
-        font-family: 'Shrikhand';
-        src: url("/font/Shrikhand-Regular.ttf") format("ttf");
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+    @mixin squareGreen {
+        width: 90px;
+        height: 20px;
+        color: #488576;
+        text-align: center;
+        font-weight: 500;
+        background-color: $squareColor;
+        padding: 5px;
+        position: absolute;
+        top:15px;
+        right: 15px;
     }
-    @font-face {
-        font-family: 'Roboto';
-        src: url("/font/Roboto-Italic.ttf") format("ttf"),
-             url("/font/Roboto-Bold.ttf") format("ttf"),
-             url("/font/Roboto-Regular.ttf") format("ttf"),
-             url("/font/Roboto-LightItalic.ttf") format("ttf"),
-             url("/font/Roboto-Medium.ttf") format("ttf"),
-             url("/font/Roboto-MediumItalic.ttf") format("ttf"),
-             url("/font/Roboto-Thin.ttf") format("ttf"),
-             url("/font/Roboto-ThinItalic.ttf") format("ttf"),
-             url("/font/Roboto-Light.ttf") format("ttf");
+    body{
+        font-family: 'Roboto', sans-serif;
+    }
+    *{margin: 0;
     }
 
     #heading{
@@ -25,7 +32,6 @@
         margin-top: 30px;
             &_logo{
                 width: 40%;
-               
             }
         
     }
@@ -34,67 +40,198 @@
         background-color: rgb(236, 233, 233);
         display: flex;
         justify-content: center;
-        align-items: baseline;
+        align-items: center;
+        gap: 25px;
         box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 6px 0px inset;
             &_icon{
                 font-size: 18px;
-                color: rgb(53, 52, 52);
-                margin-right: 20px;
+                color: rgb(70, 69, 69);
             }
             &_text{
                 font-size: 20px;
                 font-weight: bold;
-                color:rgb(53, 52, 52);
+                color:rgb(70, 69, 69);
               
             }
 
     }
     #info{
         height: 260px;
-        background-color:rgb(243, 240, 240);
+        background-color:ghostwhite;
         padding-top: 1px;
         text-align: center;
         padding-bottom: 70px;
-        font-family: Roboto;
        
             &_title{
                 font-weight: bolder;
                 margin: 30px;
-                font-family: Arial;
             }
             &_text{
-                font-size: 22px;
+                font-size: 20px;
                 margin: 30px;
-                font-weight: lighter;
                 color: rgb(90, 89, 89);
             }
             &_btn{
                 width:60%;
-                height: 50px;
+                height: 55px;
                 border-radius: 30px;
-                background: linear-gradient(#FF79DA,#9356DC);
+                background: linear-gradient($secondColor,$primaryColor);
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 margin: auto;
                 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                 padding: 3px;
+                border: none;
                         
                     &--text{
                         color: white;
                         font-size: 18px;
-                        // font-weight: bold;
-                        font-family: Arial;
-                    }   
-            
+                    } 
+                    &:hover{
+                        font-weight: bolder;
+                    }  
             }
     }
-    nav{
-        background-color: aqua;
-        color: blue;
+    .nav_title{
+        margin-left: 20px;
+        margin-top: 60px;
     }
+    .button{
+        width: 100%;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
 
-   
-   
-  }  
-  
+            &_design{
+                width: 85%;
+                height: 70px;
+                border: none;
+                border-radius: 25px;
+                background-color: ghostwhite;
+                text-decoration: none;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 20px;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+                    &-number{
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 30px;
+                        background-color:$primaryColor;
+                        color: white;
+                        position: relative;
+                        right: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    &_icon{
+                        color: rgb(116, 114, 114);
+                        font-size:20px;
+                    }
+                    &_text{
+                        color: black;
+                        font-size: 16px;
+                        font-weight: 600;
+                    }
+                    &:hover &_icon{
+                        color: $primaryColor;
+                    }
+                    &:hover{
+                        
+                        background-color: rgb(245, 230, 245);
+                    }
+            }
+    }
+    #section1{
+        width: 100%;
+        height: 1250px;
+        background-color: ghostwhite;
+        &_title{
+            padding-top: 50px;
+        }
+       
+         &_container{
+                // display: flex;
+                // flex-direction: column;
+                // align-items: center;
+                // justify-content: space-evenly;
+
+                .cards{
+                    width: 90%;
+                    height: 270px;
+                    background-color: white;
+                    border-radius: 25px;
+                    margin: 20px;
+                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                    position: relative;
+                   
+                    &--new{
+                      @include squareGreen; 
+                          
+                    }
+                                       
+                    &_image{
+                        width: 100%;
+                        height: 200px;
+                        object-fit: cover;
+                        border-radius: 25px 25px 0 0;
+                    }
+                    &_white{
+                        display: flex;
+                        justify-content: space-between;
+                        margin: 10px;
+                       
+                        &_text{
+                            margin-left: 10px;
+                            &-title{
+                                margin-bottom: 5px;
+                            }
+                        }
+                        &_heart{
+                            font-size: 24px;
+                            margin-right: 15px;
+                            margin-top: 5px;
+                            
+                        }
+                    }
+                }
+            }
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    #footer{
+        width: 100%;
+        background-color: rgb(70, 69, 69);
+        color: white;
+        
+        &_member{
+           list-style-type: none;
+           font-size: 14px;
+           line-height: 25px;
+           padding-bottom: 10px;
+          
+           &_title{
+               font-family: "Shrikhand";
+               font-size: 20px;
+               margin-bottom: 15px;
+               padding-top: 20px;
+           }
+           .footer_member_icon1{
+               padding-right: 14px;
+           }
+           .footer_member_icon2{
+               padding-right: 8px;
+           }
+        } 
+       
+       }
+}
