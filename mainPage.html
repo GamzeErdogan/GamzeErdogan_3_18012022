@@ -17,58 +17,98 @@
             <p id="location_text">Paris, Belleville</p>
         </div>
         <div id="info">
-            <h1 id="info_title">Réservez le menu qui vous convient</h1>
+            <h2 id="info_title">Réservez le menu qui <br/> convient</h2>
             <p id="info_text">Découvrez des restaurant d'exception, séléctionnés par nos soins.</p>
-            <div id="info_btn">
+            <button id="info_btn">
                 <p id="info_btn--text">Explorer nos restaurants</p>
-            </div>
+            </button>
         </div>
         <nav>
-            <h1>Fonctionnement</h1>
-            <div>bouton1</div>
-            <div>Bouton2</div>
-            <div>Bouton3</div>
+            <h1 class="nav_title">Fonctionnement</h1>
+            <div class="button">
+                <a class="button_design" href="#">
+                    <div class="button_design-number">1</div>
+                    <i class="fas fa-mobile-alt button_design_icon"></i>
+                    <p class="button_design_text">Choissez un restaurant</p>
+                </a>
+                <a class="button_design" href="#">
+                    <div class="button_design-number">2</div>
+                    <i class="fas fa-list-ul button_design_icon"></i>
+                    <p class="button_design_text">Composez votre menu</p>
+                </a>
+                <a class="button_design" href="#">
+                    <div class="button_design-number">3</div>
+                    <i class="fas fa-store button_design_icon"></i>
+                    <p class="button_design_text">Degustez au restaurant</p>
+                </a>
+            </div>
         </nav>
-        <section>
-            <h1>Restaurants</h1>
-            <div>
-                <img src="images/restaurants/1.jpg" alt="image de restaurant"/>
-                <div>
-                    <p>La palette du gout</p>
-                    <p>Ménilmontant</p>
+        <section id="section1" >
+            <h1 class="nav_title" id="section1_title">Restaurants</h1>
+            <div id="section1_container">
+                <div class="cards">
+                    <a href="#">
+                        <div class="cards--new">Nouveau</div>
+                        <img class="cards_image" src="images/restaurants/1.jpg" alt="image de restaurant"/>
+                        <div class="cards_white">
+                            <div class="cards_white_text">
+                                <h4 class="cards_white_text-title">La palette du gout</h4>
+                                <p>Ménilmontant</p>
+                            </div>
+                            <i class="far fa-heart cards_white_heart"></i>
+                            <!-- <i class="fas fa-heart cards_white_none"></i> -->
+                        </div>
+                    </a>
                 </div>
-            </div>
-            <div>
-                <img src="images/restaurants/2.jpg" alt="image de restaurant"/>
-                <div>
-                    <p>La note enchantée</p>
-                    <p>Charonne</p>
-                </div>
-            </div>
-            <div>
-                <img src="images/restaurants/3.jpg" alt="image de restaurant"/>
-                <div>
-                    <p>A la franÇaise</p>
-                    <p>Cité Rouge</p>
-                </div>
-            </div>
-            <div>
-                <img src="images/restaurants/4.jpg" alt="image de restaurant"/>
-                <div>
-                    <p>Les délice des sens</p>
-                    <p>Folie-Méricourt</p>
-                </div>
-            </div>
 
+                <div class="cards">
+                    <a href="#">
+                        <div class="cards--new">Nouveau</div>
+                        <img class="cards_image" src="images/restaurants/2.jpg" alt="image de restaurant"/>
+                        <div class="cards_white">
+                            <div class="cards_white_text">
+                                <h4 class="cards_white_text-title">La note enchantée</h4>
+                                <p>Charonne</p>
+                            </div>
+                            <i class="far fa-heart cards_white_heart"></i>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="cards">
+                    <a href="#">
+                        <img class="cards_image" src="images/restaurants/3.jpg" alt="image de restaurant"/>
+                        <div class="cards_white">
+                            <div class="cards_white_text">
+                                <h4 class="cards_white_text-title">A la franÇaise</h4>
+                                <p>Cité Rouge</p>
+                            </div>
+                            <i class="far fa-heart cards_white_heart"></i>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="cards">
+                    <a href="#">
+                        <img class="cards_image" src="images/restaurants/4.jpg" alt="image de restaurant"/>
+                        <div class="cards_white">
+                            <div class="cards_white_text">
+                                <h4 class="cards_white_text-title">Les délice des sens</h4>
+                                <p>Folie-Méricourt</p>
+                            </div>
+                            <i class="far fa-heart cards_white_heart"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
 
         </section>
-        <footer>
-            <div>
-                <img src="images/logo/ohmyfood@2x.svg" alt="logo"/>
-            </div>
-            <ul>
-                <li>Proposer un restaurant</li>
-                <li>Devenir partenaire</li>
+        <footer id="footer">
+            
+            <ul id="footer_member">
+                <li id="footer_member_title">ohmyfood</li>
+                <li><i class="fas fa-utensils footer_member_icon1"></i>Proposer un restaurant</li>
+                <li><i class="fas fa-hands-helping footer_member_icon2"></i>Devenir partenaire</li>
                 <li>Mentions légales</li>
                 <li>Contact</li>
             </ul>
