@@ -1,12 +1,10 @@
 {
-  "name": "ohmyfood",
+  "name": "p3_erdogan_gamze",
   "version": "1.0.0",
-  "description": "Mon Project Openclassroom 3 Ohmyfood",
+  "description": "mon project openclassrooms 3 ohmyfood",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass --watch ./src/sass/main.scss:.dist/css/style.css --style compressed"
   },
   "repository": {
     "type": "git",
@@ -17,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/GamzeErdogan/GamzeErdogan_3_18012022/issues"
   },
-  "homepage": "https://github.com/GamzeErdogan/GamzeErdogan_3_18012022#readme"
+  "homepage": "https://github.com/GamzeErdogan/GamzeErdogan_3_18012022#readme",
+  "devDependencies": {
+    "sass": "^1.49.0"
+  }
 }
