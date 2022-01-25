@@ -162,11 +162,23 @@
   }
   #section1 {
     width: 100%;
-    height: 1250px;
+    height: 1350px;
     background-color: ghostwhite;
   }
   #section1_title {
     padding-top: 50px;
+  }
+  #section1_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #section1_container .cards {
     width: 90%;
@@ -237,6 +249,9 @@
     font-size: 20px;
     margin-bottom: 15px;
     padding-top: 20px;
+  }
+  #footer_member_mail {
+    color: white;
   }
   #footer_member .footer_member_icon1 {
     padding-right: 14px;
