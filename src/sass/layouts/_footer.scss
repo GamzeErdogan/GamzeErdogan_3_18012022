@@ -1,0 +1,34 @@
+#footer{
+    width: 100%;
+    background-color: rgb(70, 69, 69);
+    color: white;
+    
+    &_member{
+       list-style-type: none;
+       font-size: 14px;
+       line-height: 25px;
+       padding-bottom: 10px;
+    //    @include pc-only{
+    //        display: flex;
+    //        flex-direction: row;
+    //        flex-wrap: wrap;
+    //    }
+      
+       &_title{
+           font-family: "Shrikhand";
+           font-size: 20px;
+           margin-bottom: 15px;
+           padding-top: 20px;
+       }
+       &_mail{
+           color: white;
+       }
+       .footer_member_icon1{
+           padding-right: 14px;
+       }
+       .footer_member_icon2{
+           padding-right: 8px;
+       }
+    } 
+   
+   }
