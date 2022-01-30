@@ -4,7 +4,8 @@
   "description": "mon project openclassrooms 3 ohmyfood",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./src/sass/main.scss:dist/css/style.css --style compressed"
+    "sass": "sass --watch ./src/sass/main.scss:dist/css/style.css --style compressed",
+    "prefix": "postcss ./dist/css/style.css --use autoprefixer -d./dist/css/prefixed/"
   },
   "repository": {
     "type": "git",
@@ -12,11 +13,17 @@
   },
   "author": "Gamze E.",
   "license": "ISC",
+  "browserslist": "last 4 version",
   "bugs": {
     "url": "https://github.com/GamzeErdogan/GamzeErdogan_3_18012022/issues"
   },
   "homepage": "https://github.com/GamzeErdogan/GamzeErdogan_3_18012022#readme",
   "devDependencies": {
     "sass": "^1.49.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.5",
+    "postcss-cli": "^9.1.0"
   }
 }

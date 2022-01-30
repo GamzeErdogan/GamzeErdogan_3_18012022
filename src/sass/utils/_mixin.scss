@@ -30,3 +30,17 @@
         @content;
     }
 }
+
+@mixin arrow-left{
+    #heading_arrow{
+        width: 50px;
+        height: 40px;
+        display: absolute;
+        top: 20px;
+        left:20px;
+        &--left{
+            font-size: 20px;
+            color: darkgray;
+        }
+    }
+}

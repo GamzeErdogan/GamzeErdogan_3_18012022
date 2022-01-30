@@ -2,24 +2,42 @@
     width: 100%;
     background-color: rgb(70, 69, 69);
     color: white;
-    
-    &_member{
-       list-style-type: none;
-       font-size: 14px;
-       line-height: 25px;
-       padding-bottom: 10px;
-    //    @include pc-only{
-    //        display: flex;
-    //        flex-direction: row;
-    //        flex-wrap: wrap;
-    //    }
-      
-       &_title{
-           font-family: "Shrikhand";
+    &_title{
+           font-family: 'Shrikhand',cursive;
            font-size: 20px;
            margin-bottom: 15px;
            padding-top: 20px;
-       }
+           margin-left: 35px;
+           @include pc-only{
+                text-align: center;
+                font-size: 26px;
+            }
+           @include tablette-only{
+                text-align: center;
+                font-size: 24px;
+            }
+    }
+    &_member{
+       list-style-type: none;
+       font-size: 14px;
+       line-height: 15px;
+       padding-bottom: 10px;
+       margin-left: 20px; //ikinci version icin ekledim
+        @include pc-only{
+            display: flex;
+            justify-content: center;
+            font-size: 16px;
+            }
+        @include tablette-only{
+            display: flex;
+            justify-content: center;
+            font-size: 15px;
+            }
+        .footer_margin{
+            margin: 15px;
+            }
+      
+   
        &_mail{
            color: white;
        }
