@@ -1,14 +1,15 @@
     @import "./utils/variables";
-    @import "./base/font";
-
-    
+    @import "./base/font";    
     @import "./utils/mixin";
     @import "./base/global";
-
     @import "./layouts/header";
     @import "./layouts/location";
     @import "./layouts/info";
     @import "./layouts/nav";
     @import "./layouts/container";
-    
     @import "./layouts/footer";
+
+    @import "./pages/restaurants_common_page";
+    
+
+    
