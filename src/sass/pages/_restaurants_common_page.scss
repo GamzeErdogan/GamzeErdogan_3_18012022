@@ -41,13 +41,17 @@
 main{
     background-color:ghostwhite;
     padding-top: 5px;
-    @include pc-only{
+    height: 1150px;
+        @include pc-only{
         display: flex;
         justify-content: space-between;
         padding-top: 100px;
         section{
             width: 35%;
         }
+    }
+    section{
+        margin-bottom: 50px;
     }
     h3{ 
         width: min-content;
