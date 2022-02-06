@@ -68,14 +68,16 @@ main{
         align-items:center;
         margin: 10px;
         height: 250px;
-        
-
-        .card{
+        .card_container{
             width: 90%;
             height: 50px;
             background-color: white;
             padding: 10px;
             border-radius: 15px;
+
+        .card{
+            // width: 87%;
+           
             &_text{
                 display: flex;
                 justify-content:space-between;
@@ -87,4 +89,5 @@ main{
             }
         }
     }
+}
 }

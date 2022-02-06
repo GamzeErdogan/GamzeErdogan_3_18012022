@@ -1,0 +1,57 @@
+.card_container{
+    cursor: pointer;
+    position: relative;
+    .menu_animation{
+        width:80px;
+        height: 70px;
+        background-color: $squareColor;
+        border-radius: 0 15px 15px 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transition: transform 500ms ease-in-out;
+        transform: translateX(0) scaleX(0);
+        transform-origin: right 50%;
+        .card_text--bold{
+            transition: transform 500ms ease-in-out;
+        }
+        &--flex{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &_round{
+            background-color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 30px;
+            &--check{
+                color: $squareColor;
+                transform: rotate(0);
+                transition: transform 500ms ease;
+               
+        }
+    }
+    }}
+.card {
+    &:active{
+       .card_text--bold{
+            transform: translateX(-80px);
+       }
+       p:first-child ,h4:first-child{
+        display: inline-block;
+        width: 180px;
+        white-space: nowrap;
+        overflow: hidden !important;
+        text-overflow: ellipsis;
+       }
+    }
+    &:active + .menu_animation{
+        transform:translateX(0) scale(1);
+
+       .menu_animation_round--check{
+            transform: rotate(360deg);
+
+        }
+    }
+}
