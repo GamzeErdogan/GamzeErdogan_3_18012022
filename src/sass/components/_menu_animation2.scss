@@ -1,0 +1,25 @@
+$card-number:4;
+$anim-dur: 1000ms;
+$anim-delay:calc($anim-dur/ $card-number);
+
+@keyframes glisse{
+    from{ 
+        transform:translateY(35%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.container{
+    .card_container{
+        animation: glisse $anim-dur;
+    }
+    @for $i from 1 through $card-number{
+        .card-#{$i} {
+            animation-delay:$anim-delay * $i;
+        }
+    }
+}

@@ -2,16 +2,16 @@
     cursor: pointer;
     position: relative;
     .menu_animation{
-        width:80px;
         height: 70px;
+        width:80px;
         background-color: $squareColor;
         border-radius: 0 15px 15px 0;
         position: absolute;
         top: 0;
         right: 0;
+        transform: scaleX(0);
         transition: transform 500ms ease-in-out;
-        transform: translateX(0) scaleX(0);
-        transform-origin: right 50%;
+        transform-origin: right;
         .card_text--bold{
             transition: transform 500ms ease-in-out;
         }
@@ -27,7 +27,6 @@
             border-radius: 30px;
             &--check{
                 color: $squareColor;
-                transform: rotate(0);
                 transition: transform 500ms ease;
                
         }
@@ -47,11 +46,13 @@
        }
     }
     &:active + .menu_animation{
-        transform:translateX(0) scale(1);
+        transform:scaleX(1);
 
        .menu_animation_round--check{
             transform: rotate(360deg);
-
         }
+        
     }
+    
 }
+

@@ -32,34 +32,92 @@
             padding: 0 20px;
             position: relative;
             bottom: 40px;
+            .far{
+                font-size: 20px;
+                cursor: pointer;
+            }
             h2{
                 font-family: 'Shrikhand',cursive;
+                @include pc-only{
+                    font-size: 30px;
+                }
             }
-        
+            @include tablette-only{
+                padding: 0 55px;
+                margin-bottom: 20px;
+                .far{
+                    font-size: 22px;
+                }
+            }
+            @include pc-only{
+                padding: 0 40px;
+                .far{
+                    font-size: 26px;
+                }
+            }
     }
 }
+#main_height{
+    height: 1250px;
+    @include pc-only{
+        height: 450px;
+    }
+    }
 main{
     background-color:ghostwhite;
-    padding-top: 5px;
+    
     height: 1150px;
         @include pc-only{
+        height: auto;
         display: flex;
-        justify-content: space-between;
-        padding-top: 100px;
+        flex-direction: column;
+        align-items: center;
+        padding: 100px 0 50px 0;
+        #mainContainer{
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+        }
         section{
-            width: 35%;
+            width: 45%;
         }
     }
-    section{
-        margin-bottom: 50px;
+    @include tablette-only{
+        #section--padding{
+            padding-top: 50px;
+        }
     }
+       
+    section{
+        margin-bottom: 50px; 
+        #container_height{
+            height: 350px;
+        }
+    }
+   
     h3{ 
         width: min-content;
         margin-left: 20px;
         color: gray;
         font-weight: normal;
-        border-bottom:$squareColor 2px solid;
+        position: relative;
+        @include tablette-only {
+            margin-left: 50px;
+            font-size: larger;
+        }
     }
+    h3:before {
+        content : "";
+        position: absolute;
+        left    : 0;
+        bottom  : -5px;
+        height  : 3px;
+        width   : 50%; 
+        border-bottom:$squareColor 3px solid;
+      }
+}
+    
+
     
     .container{
         display: flex;
@@ -74,10 +132,10 @@ main{
             background-color: white;
             padding: 10px;
             border-radius: 15px;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 7px 15px 0px;
 
         .card{
-            // width: 87%;
-           
+       
             &_text{
                 display: flex;
                 justify-content:space-between;
@@ -89,5 +147,4 @@ main{
             }
         }
     }
-}
 }
