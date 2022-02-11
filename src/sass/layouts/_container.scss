@@ -32,7 +32,7 @@
         .cards{
             width: 90%;
             height: 270px;
-            background-color: white;
+            background-color: $white;
             border-radius: 25px;
             margin: 20px;
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -40,17 +40,14 @@
             @include tablette-only{
                 width: 40%;
                 height: 300px;
-                // margin: 40px;
             }
             @include pc-only{
                 width: 40%;
                 height: 300px;
-                // margin: 50px;
             }
                
             &--new{
-              @include squareGreen; 
-                      
+              @include squareGreen;
             }
                                    
             &_image{

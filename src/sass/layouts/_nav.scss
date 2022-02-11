@@ -46,7 +46,7 @@ nav{
             height: 70px;
             border: none;
             border-radius: 25px;
-            background-color: ghostwhite;
+            background-color:$ghostWhite;
             text-decoration: none;
             display: flex;
             justify-content: flex-start;
@@ -59,7 +59,7 @@ nav{
                     height: 30px;
                     border-radius: 30px;
                     background-color:$primaryColor;
-                    color: white;
+                    color: $white;
                     position: relative;
                     right: 10px;
                     display: flex;

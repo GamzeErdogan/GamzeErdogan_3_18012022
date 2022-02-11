@@ -60,14 +60,19 @@
 #main_height{
     height: 1250px;
     @include pc-only{
-        height: 450px;
+        height: 500px;
     }
-    }
+}
+
 main{
     background-color:ghostwhite;
-    
     height: 1150px;
-        @include pc-only{
+    @include tablette-only{
+        #section--padding{
+            padding-top: 50px;
+        }
+    }
+    @include pc-only{
         height: auto;
         display: flex;
         flex-direction: column;
@@ -82,11 +87,7 @@ main{
             width: 45%;
         }
     }
-    @include tablette-only{
-        #section--padding{
-            padding-top: 50px;
-        }
-    }
+    
        
     section{
         margin-bottom: 50px; 

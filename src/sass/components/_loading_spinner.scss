@@ -1,0 +1,53 @@
+#container_loader{
+    position: fixed;
+    background-color:#162534;         
+    opacity: .9;
+    height: 100vh;
+    inset: 0;
+    z-index:1;
+    animation: disappear 1s 3s forwards;
+    transform-origin: top;
+    .loader{
+        width: 10rem;
+        height: 10rem;        
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        &-inner{
+            width: 100%;
+            height: 100%;
+            border: 7px solid #162534;
+            border-radius: 50%;
+            border-bottom-color:rgb(132, 219, 19);
+            border-top-color: rgb(239, 243, 8);
+            border-left-color: rgb(231, 20, 185);
+            border-right-color: aqua;
+            animation: rotate 2s linear infinite;
+        }
+    }
+}
+
+
+@keyframes rotate{
+    0% {
+        transform: scale(1) rotate(360deg); 
+    }
+    50% {
+        transform: scale(.5) rotate(-360deg); 
+    }
+    100% {
+        transform: scale1(1) rotate(360deg); 
+    }
+    
+}
+
+@keyframes disappear{
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0);
+    }
+
+}
