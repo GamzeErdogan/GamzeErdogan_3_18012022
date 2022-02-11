@@ -40,7 +40,7 @@
         left:20px;
         &--left{
             font-size: 20px;
-            color: darkgray;
+            color: $heading_arrow;
         }
     }
 }
@@ -48,11 +48,4 @@
 @mixin button-hover($colour:$primaryColor, $colour2: $secondColor) {
     background: linear-gradient(350deg, lighten($colour, 5%), lighten($colour2, 5%));
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
-
-//flexbox
-@mixin flexbox{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
