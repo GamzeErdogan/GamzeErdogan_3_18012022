@@ -1,8 +1,12 @@
 .cards_white_heart{
     font-size: 28px;
     position: absolute;
-    right: 20px;
+    right: 30px;
     top: 83%;
+    cursor: pointer;
+}
+.heart-top{
+    top:auto;
 }
 .heart_solid{
     color: transparent;

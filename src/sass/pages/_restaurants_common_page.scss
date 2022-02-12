@@ -32,10 +32,6 @@
             padding: 0 20px;
             position: relative;
             bottom: 40px;
-            .far{
-                font-size: 20px;
-                cursor: pointer;
-            }
             h2{
                 font-family: 'Shrikhand',cursive;
                 @include pc-only{
@@ -117,9 +113,7 @@ main{
         border-bottom:$squareColor 3px solid;
       }
 }
-    
-
-    
+  
     .container{
         display: flex;
         flex-direction: column;
